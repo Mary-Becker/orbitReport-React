@@ -1,4 +1,6 @@
 import React from "react";
+import satData from "./satData";
+
 
 const Buttons = ({ filterByType, setSat, orbitTypes }) => {
   const handleAllSatellites = () => {
@@ -12,7 +14,7 @@ const Buttons = ({ filterByType, setSat, orbitTypes }) => {
           {type} Orbit
         </button>
       ))}
-      <button onClick={() => setSat(satData)}>All Orbits</button>
+      <button onClick = {handleAllSatellites}>All Orbits</button>
     </div>
   );
 };
